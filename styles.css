@@ -12,17 +12,26 @@ h1{
 }
 
 .container{
+	padding: 7% 15%;
+}
+.grid-box{
     display: grid;
     grid-template-columns: 50% 50%;
     align-items: center;
     justify-content: space-between;
-    padding: 7% 15%;
+}
+
+p{
+	font-weight: 400;
 }
 
 .side-text{
     color: white;
     text-align: left;
 }
+	.side-text h1{
+		font-weight: 700;
+	}
 form{
     background-color: white;
     padding: 30px;
@@ -38,8 +47,15 @@ form{
     color: white;
 	padding: 5px 0;
 	margin-bottom: 15px;
+	height: 48px;
 	border: none;
 	border-radius: 8px;
+	font-weight: 600;
+}
+
+.blue-box mark{
+	background: none;
+	color: hsl(246, 25%, 77%);
 }
 
 .sub-btn{
@@ -60,4 +76,44 @@ form{
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	box-sizing: border-box;
+	font-weight: 600;
+}
+
+input:active{
+	border: 1px solid hsl(248, 32%, 49%);
+}
+
+
+.terms{
+	font-size: 11px;
+	color: hsl(246, 25%, 77%);
+}
+	.terms a{
+		text-decoration: none;
+		color: hsl(0, 100%, 74%) ;
+	}
+
+
+
+@media(max-width: 500px){
+	body{
+		background-image: url(images/bg-intro-mobile.png);
+
+	}
+
+	.container{
+		padding: 7% 7%;
+	}
+	.grid-box{
+		grid-template-columns: 1fr;
+	}
+
+	.side-text{
+		text-align: center;
+	}
+
+	.blue-box{
+		padding: 2px 12px 24px 12px;
+	}
+
 }
